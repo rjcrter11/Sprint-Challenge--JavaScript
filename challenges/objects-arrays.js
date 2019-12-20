@@ -148,11 +148,11 @@ for (let i = 0; i < graduates.length; i++) {
 const contactInfo = contactsInfo.join(" ");
 const stringSplitter = (contactInfo, splitLength) => {
   let arr = contactInfo.split(" ");
-  let b = [];
+  let splitArr = [];
   while (arr.length) {
-    b.push(arr.splice(0, splitLength).join(" "));
+    splitArr.push(arr.splice(0, splitLength).join(" "));
   }
-  return b;
+  return splitArr;
 };
 
 console.log(stringSplitter(contactInfo, 2));
