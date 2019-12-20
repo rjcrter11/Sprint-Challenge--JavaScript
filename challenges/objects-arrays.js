@@ -147,9 +147,11 @@ for (let i = 0; i < graduates.length; i++) {
 }
 const contactInfo = contactsInfo.join(" ");
 const stringSplitter = (contactInfo, splitLength) => {
-  let a = contactInfo.split(" "),
-    b = [];
-  while (a.length) b.push(a.splice(0, splitLength).join(" "));
+  let arr = contactInfo.split(" ");
+  let b = [];
+  while (arr.length) {
+    b.push(arr.splice(0, splitLength).join(" "));
+  }
   return b;
 };
 
